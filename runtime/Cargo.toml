@@ -189,6 +189,12 @@ git = 'https://github.com/paritytech/substrate.git'
 tag = 'monthly-2021-10'
 version = '4.0.0-dev'
 
+[dependencies.pallet-nicks]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-YYYY-MM'
+version = '4.0.0-dev'
+
 [features]
 default = ['std']
 runtime-benchmarks = [
@@ -204,6 +210,7 @@ runtime-benchmarks = [
 ]
 std = [
     'codec/std',
+    'pallet-nicks/std',
     'scale-info/std',
     'frame-executive/std',
     'frame-support/std',
